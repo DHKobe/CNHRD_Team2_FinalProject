@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace CNHRD_Team2_FinalProject
 {
-    public partial class MainPage : Form
+    public partial class testpage : Form
     {
-        public MainPage()
+        public testpage()
         {
             InitializeComponent();
         }

@@ -16,7 +16,7 @@ namespace CNHRD_Team2_FinalProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainPage());
+            Application.Run(new testpage());
         }
     }
 }
