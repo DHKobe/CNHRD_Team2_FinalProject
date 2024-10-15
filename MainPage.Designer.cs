@@ -136,6 +136,63 @@
             this.cb_employees.TabStop = false;
             this.cb_employees.Text = "직원관리";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.bt_EmployeeManagement);
+            this.panel1.Controls.Add(this.bt_OperationAnalysis);
+            this.panel1.Controls.Add(this.bt_DowntimeAnalysis);
+            this.panel1.Controls.Add(this.bt_ProductionList);
+            this.panel1.Controls.Add(this.bt_Monitoring);
+            this.panel1.Location = new System.Drawing.Point(336, 24);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(912, 80);
+            this.panel1.TabIndex = 3;
+            // 
+            // bt_Monitoring
+            // 
+            this.bt_Monitoring.Location = new System.Drawing.Point(16, 16);
+            this.bt_Monitoring.Name = "bt_Monitoring";
+            this.bt_Monitoring.Size = new System.Drawing.Size(112, 48);
+            this.bt_Monitoring.TabIndex = 0;
+            this.bt_Monitoring.Text = "모니터링";
+            this.bt_Monitoring.UseVisualStyleBackColor = true;
+            // 
+            // bt_ProductionList
+            // 
+            this.bt_ProductionList.Location = new System.Drawing.Point(168, 16);
+            this.bt_ProductionList.Name = "bt_ProductionList";
+            this.bt_ProductionList.Size = new System.Drawing.Size(112, 48);
+            this.bt_ProductionList.TabIndex = 1;
+            this.bt_ProductionList.Text = "생산목록";
+            this.bt_ProductionList.UseVisualStyleBackColor = true;
+            // 
+            // bt_DowntimeAnalysis
+            // 
+            this.bt_DowntimeAnalysis.Location = new System.Drawing.Point(328, 16);
+            this.bt_DowntimeAnalysis.Name = "bt_DowntimeAnalysis";
+            this.bt_DowntimeAnalysis.Size = new System.Drawing.Size(112, 48);
+            this.bt_DowntimeAnalysis.TabIndex = 2;
+            this.bt_DowntimeAnalysis.Text = "비가동분석";
+            this.bt_DowntimeAnalysis.UseVisualStyleBackColor = true;
+            // 
+            // bt_OperationAnalysis
+            // 
+            this.bt_OperationAnalysis.Location = new System.Drawing.Point(480, 16);
+            this.bt_OperationAnalysis.Name = "bt_OperationAnalysis";
+            this.bt_OperationAnalysis.Size = new System.Drawing.Size(112, 48);
+            this.bt_OperationAnalysis.TabIndex = 3;
+            this.bt_OperationAnalysis.Text = "가동분석";
+            this.bt_OperationAnalysis.UseVisualStyleBackColor = true;
+            // 
+            // bt_EmployeeManagement
+            // 
+            this.bt_EmployeeManagement.Location = new System.Drawing.Point(624, 16);
+            this.bt_EmployeeManagement.Name = "bt_EmployeeManagement";
+            this.bt_EmployeeManagement.Size = new System.Drawing.Size(112, 48);
+            this.bt_EmployeeManagement.TabIndex = 4;
+            this.bt_EmployeeManagement.Text = "직원관리";
+            this.bt_EmployeeManagement.UseVisualStyleBackColor = true;
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
