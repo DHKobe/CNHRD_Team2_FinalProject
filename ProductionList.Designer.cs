@@ -1,6 +1,6 @@
 ﻿namespace CNHRD_Team2_FinalProject
 {
-    partial class Monitoring
+    partial class ProductionList
     {
         /// <summary>
         /// Required designer variable.
@@ -30,16 +30,17 @@
         {
             this.SuspendLayout();
             // 
-            // Monitoring
+            // ProductionList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Font = new System.Drawing.Font("돋움체", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Monitoring";
-            this.Text = "모니터링";
+            this.ForeColor = System.Drawing.Color.Black;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "ProductionList";
+            this.Text = "생산목록";
             this.ResumeLayout(false);
 
         }

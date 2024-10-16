@@ -98,6 +98,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CurrentOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurrentOperation.Designer.cs">
+      <DependentUpon>CurrentOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees.Designer.cs">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OperationDowntime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OperationDowntime.Designer.cs">
+      <DependentUpon>OperationDowntime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionList.Designer.cs">
+      <DependentUpon>ProductionList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Monitoring.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +148,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CurrentOperation.resx">
+      <DependentUpon>CurrentOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees.resx">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OperationDowntime.resx">
+      <DependentUpon>OperationDowntime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionList.resx">
+      <DependentUpon>ProductionList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
     </EmbeddedResource>

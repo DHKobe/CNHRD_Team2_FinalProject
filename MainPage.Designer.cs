@@ -28,37 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pb_mainimage = new System.Windows.Forms.PictureBox();
-            this.pb_logo = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cb_monitoring = new System.Windows.Forms.ComboBox();
             this.cb_productionlist = new System.Windows.Forms.ComboBox();
             this.cb_operation = new System.Windows.Forms.ComboBox();
             this.cb_employees = new System.Windows.Forms.ComboBox();
             this.bt_login = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_mainimage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
+            this.pb_logo = new System.Windows.Forms.PictureBox();
+            this.pb_mainimage = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_mainimage)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pb_mainimage
-            // 
-            this.pb_mainimage.Location = new System.Drawing.Point(40, 192);
-            this.pb_mainimage.Name = "pb_mainimage";
-            this.pb_mainimage.Size = new System.Drawing.Size(1192, 464);
-            this.pb_mainimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_mainimage.TabIndex = 0;
-            this.pb_mainimage.TabStop = false;
-            // 
-            // pb_logo
-            // 
-            this.pb_logo.Image = global::CNHRD_Team2_FinalProject.Properties.Resources.HDlogo;
-            this.pb_logo.Location = new System.Drawing.Point(16, 32);
-            this.pb_logo.Name = "pb_logo";
-            this.pb_logo.Size = new System.Drawing.Size(384, 112);
-            this.pb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_logo.TabIndex = 1;
-            this.pb_logo.TabStop = false;
             // 
             // panel1
             // 
@@ -75,6 +56,7 @@
             // cb_monitoring
             // 
             this.cb_monitoring.BackColor = System.Drawing.Color.White;
+            this.cb_monitoring.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cb_monitoring.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cb_monitoring.Font = new System.Drawing.Font("돋움체", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.cb_monitoring.ForeColor = System.Drawing.Color.MidnightBlue;
@@ -89,6 +71,7 @@
             // cb_productionlist
             // 
             this.cb_productionlist.BackColor = System.Drawing.Color.White;
+            this.cb_productionlist.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cb_productionlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cb_productionlist.Font = new System.Drawing.Font("돋움체", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.cb_productionlist.ForeColor = System.Drawing.Color.MidnightBlue;
@@ -103,10 +86,12 @@
             // cb_operation
             // 
             this.cb_operation.BackColor = System.Drawing.Color.White;
+            this.cb_operation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cb_operation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cb_operation.Font = new System.Drawing.Font("돋움체", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.cb_operation.ForeColor = System.Drawing.Color.MidnightBlue;
             this.cb_operation.FormattingEnabled = true;
+            this.cb_operation.ItemHeight = 21;
             this.cb_operation.Location = new System.Drawing.Point(368, 48);
             this.cb_operation.Name = "cb_operation";
             this.cb_operation.Size = new System.Drawing.Size(136, 29);
@@ -117,6 +102,7 @@
             // cb_employees
             // 
             this.cb_employees.BackColor = System.Drawing.Color.White;
+            this.cb_employees.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cb_employees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cb_employees.Font = new System.Drawing.Font("돋움체", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.cb_employees.ForeColor = System.Drawing.Color.MidnightBlue;
@@ -130,6 +116,7 @@
             // 
             // bt_login
             // 
+            this.bt_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_login.Font = new System.Drawing.Font("돋움체", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.bt_login.Location = new System.Drawing.Point(720, 56);
             this.bt_login.Name = "bt_login";
@@ -137,6 +124,26 @@
             this.bt_login.TabIndex = 7;
             this.bt_login.Text = "로그인";
             this.bt_login.UseVisualStyleBackColor = true;
+            // 
+            // pb_logo
+            // 
+            this.pb_logo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb_logo.Image = global::CNHRD_Team2_FinalProject.Properties.Resources.HDlogo;
+            this.pb_logo.Location = new System.Drawing.Point(16, 32);
+            this.pb_logo.Name = "pb_logo";
+            this.pb_logo.Size = new System.Drawing.Size(384, 112);
+            this.pb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_logo.TabIndex = 1;
+            this.pb_logo.TabStop = false;
+            // 
+            // pb_mainimage
+            // 
+            this.pb_mainimage.Location = new System.Drawing.Point(40, 192);
+            this.pb_mainimage.Name = "pb_mainimage";
+            this.pb_mainimage.Size = new System.Drawing.Size(1192, 464);
+            this.pb_mainimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_mainimage.TabIndex = 0;
+            this.pb_mainimage.TabStop = false;
             // 
             // MainPage
             // 
@@ -151,10 +158,10 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainPage";
-            this.Text = "MainPage";
-            ((System.ComponentModel.ISupportInitialize)(this.pb_mainimage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
+            this.Text = "홈화면";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_mainimage)).EndInit();
             this.ResumeLayout(false);
 
         }
