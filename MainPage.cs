@@ -62,7 +62,7 @@ namespace CNHRD_Team2_FinalProject
             cb_monitoring.Items.Add("모니터링");
             cb_productionlist.Items.Add("생산목록");
             cb_operation.Items.Add("가동현황");
-            cb_operation.Items.Add("비가동현황");
+            cb_operation.Items.Add("발생이벤트");
             cb_employees.Items.Add("직원관리");
         }
 
@@ -144,8 +144,8 @@ namespace CNHRD_Team2_FinalProject
                 currentOperationForm.Show();
                 this.Hide(); //현재 창 숨기기
             }
-            else if(comboBox.SelectedItem.ToString() == "비가동현황"){ 
-                //비가동현황 폼 열기
+            else if(comboBox.SelectedItem.ToString() == "발생이벤트"){
+                //발생이벤트 폼 열기
                 OperationDowntime operationDowntime = new OperationDowntime();
                 operationDowntime.Show();
                 this.Hide(); //현재 창 숨기기
