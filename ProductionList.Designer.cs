@@ -35,6 +35,7 @@
             this.cb_productionlist = new System.Windows.Forms.ComboBox();
             this.cb_monitoring = new System.Windows.Forms.ComboBox();
             this.pb_logo = new System.Windows.Forms.PictureBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
             this.SuspendLayout();
@@ -134,12 +135,23 @@
             this.pb_logo.TabIndex = 3;
             this.pb_logo.TabStop = false;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(16, 168);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2029, 12, 25, 23, 59, 59, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(2024, 10, 16, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(240, 26);
+            this.dateTimePicker1.TabIndex = 5;
+            this.dateTimePicker1.TabStop = false;
+            // 
             // ProductionList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pb_logo);
             this.Font = new System.Drawing.Font("돋움체", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -162,5 +174,6 @@
         private System.Windows.Forms.ComboBox cb_productionlist;
         private System.Windows.Forms.ComboBox cb_monitoring;
         private System.Windows.Forms.PictureBox pb_logo;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
