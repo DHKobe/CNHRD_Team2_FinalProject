@@ -19,6 +19,7 @@ namespace CNHRD_Team2_FinalProject
         public MainPage()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen; //화면 중앙에 창 띄우기
             LoadImages();
             combobox_init();
 

@@ -48,7 +48,7 @@
             this.panel1.Controls.Add(this.cb_operation);
             this.panel1.Controls.Add(this.cb_productionlist);
             this.panel1.Controls.Add(this.cb_monitoring);
-            this.panel1.Location = new System.Drawing.Point(408, 40);
+            this.panel1.Location = new System.Drawing.Point(408, 24);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(824, 112);
             this.panel1.TabIndex = 2;
@@ -129,7 +129,7 @@
             // 
             this.pb_logo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pb_logo.Image = global::CNHRD_Team2_FinalProject.Properties.Resources.HDlogo;
-            this.pb_logo.Location = new System.Drawing.Point(16, 32);
+            this.pb_logo.Location = new System.Drawing.Point(16, 16);
             this.pb_logo.Name = "pb_logo";
             this.pb_logo.Size = new System.Drawing.Size(384, 112);
             this.pb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
