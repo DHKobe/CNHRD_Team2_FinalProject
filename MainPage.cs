@@ -24,7 +24,7 @@ namespace CNHRD_Team2_FinalProject
 
             //Timer 설정
             imageSwitchTimer = new Timer();
-            imageSwitchTimer.Interval = 3000; // 3초 간격
+            imageSwitchTimer.Interval = 3000; //3초 간격 부여
             imageSwitchTimer.Tick += ImageSwitchTimer_Tick;
             imageSwitchTimer.Start();
 
@@ -42,8 +42,11 @@ namespace CNHRD_Team2_FinalProject
             cb_productionlist.Click += ComboBox_Click;
             cb_operation.Click += ComboBox_Click;
             cb_employees.Click += ComboBox_Click;
+
+            //SelectedIndexChanged 이벤트 핸들러 추가
+            cb_monitoring.SelectedIndexChanged += ComboBox_SelectedIndexChanged;
         }
-        public void combobox_init()
+        private void combobox_init()
         {
             cb_monitoring.Items.Add("모니터링");
             cb_productionlist.Items.Add("생산목록");
@@ -53,15 +56,15 @@ namespace CNHRD_Team2_FinalProject
         }
 
         //콤보박스 입력차단 이벤트 함수
-        public void ComboBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void ComboBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
         }
 
-        public void ComboBox_Click(object sender, EventArgs e)
+        private void ComboBox_Click(object sender, EventArgs e)
         {
             ComboBox comboBox = sender as ComboBox;
-            comboBox.DroppedDown = true; // 드롭다운 열기
+            comboBox.DroppedDown = true; //드롭다운 열기
         }
 
         private void LoadImages()
@@ -88,8 +91,21 @@ namespace CNHRD_Team2_FinalProject
         }
         private void ImageSwitchTimer_Tick(object sender, EventArgs e)
         {
-            currentIndex = (currentIndex + 1) % images.Length; // 이미지 순환
+            currentIndex = (currentIndex + 1) % images.Length; //메인화면 이미지 변경루틴
             pb_mainimage.Image = Image.FromFile(images[currentIndex]);
+        }
+        private void ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ComboBox comboBox = sender as ComboBox;
+
+            //모니터링 항목이 선택시
+            if (comboBox.SelectedItem.ToString() == "모니터링")
+            {
+                // Monitoring 폼 열기
+                Monitoring monitoringForm = new Monitoring();
+                monitoringForm.Show(); //모니터링폼 열기
+                this.Hide(); //현재 창 숨기기
+            }
         }
     }
 }
