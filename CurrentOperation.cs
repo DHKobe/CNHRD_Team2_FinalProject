@@ -79,7 +79,7 @@ namespace CNHRD_Team2_FinalProject
             else if (comboBox.SelectedItem.ToString() == "생산목록")
             {
                 //생산목록 폼 열기
-                ProductionList productionListForm = new ProductionList();
+                Production productionListForm = new Production();
                 productionListForm.Show();
                 this.Close(); //현재 창 숨기기
             }

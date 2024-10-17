@@ -110,6 +110,12 @@
     <Compile Include="Employees.Designer.cs">
       <DependentUpon>Employees.cs</DependentUpon>
     </Compile>
+    <Compile Include="Production.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production.Designer.cs">
+      <DependentUpon>Production.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,12 +127,6 @@
     </Compile>
     <Compile Include="OperationDowntime.Designer.cs">
       <DependentUpon>OperationDowntime.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ProductionList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ProductionList.Designer.cs">
-      <DependentUpon>ProductionList.cs</DependentUpon>
     </Compile>
     <Compile Include="Monitoring.cs">
       <SubType>Form</SubType>
@@ -160,14 +160,14 @@
     <EmbeddedResource Include="OperationDowntime.resx">
       <DependentUpon>OperationDowntime.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProductionList.resx">
-      <DependentUpon>ProductionList.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Monitoring.resx">
       <DependentUpon>Monitoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production.resx">
+      <DependentUpon>Production.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="testpage.resx">
       <DependentUpon>testpage.cs</DependentUpon>
