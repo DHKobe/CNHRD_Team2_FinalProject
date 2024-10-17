@@ -38,7 +38,7 @@ namespace CNHRD_Team2_FinalProject
             cb_employees.SelectedIndexChanged += ComboBox_SelectedIndexChanged;
 
             //로그인 버튼 클릭 이벤트 핸들러 추가
-            bt_login.Click += Bt_login_Click;
+            bt_logout.Click += Bt_logout_Click;
 
             //로고 버튼 클릭 이벤트핸들러 추가
             pb_logo.Click += Pb_logo_Click;
@@ -74,7 +74,7 @@ namespace CNHRD_Team2_FinalProject
                 //Monitoring 폼 열기
                 Monitoring monitoringForm = new Monitoring();
                 monitoringForm.Show(); //모니터링폼 열기
-                this.Hide(); //현재 창 숨기기
+                this.Close(); //현재 창 숨기기
             }
             //생산목록 항목 선택시
             else if (comboBox.SelectedItem.ToString() == "생산목록")
@@ -82,7 +82,7 @@ namespace CNHRD_Team2_FinalProject
                 //생산목록 폼 열기
                 ProductionList productionListForm = new ProductionList();
                 productionListForm.Show();
-                this.Hide(); //현재 창 숨기기
+                this.Close(); //현재 창 숨기기
             }
             //가동분석 항목 선택시
             else if (comboBox.SelectedItem.ToString() == "가동현황")
@@ -90,30 +90,31 @@ namespace CNHRD_Team2_FinalProject
                 //가동현황 폼 열기
                 CurrentOperation currentOperationForm = new CurrentOperation();
                 currentOperationForm.Show();
-                this.Hide(); //현재 창 숨기기
+                this.Close(); //현재 창 숨기기
             }
             else if (comboBox.SelectedItem.ToString() == "발생이벤트")
             {
                 //발생이벤트 폼 열기
                 OperationDowntime operationDowntime = new OperationDowntime();
                 operationDowntime.Show();
-                this.Hide(); //현재 창 숨기기
+                this.Close(); //현재 창 숨기기
             }
             else if (comboBox.SelectedItem.ToString() == "직원관리")
             {
                 //직원관리 폼 열기
                 Employees employeesForm = new Employees();
                 employeesForm.Show();
-                this.Hide();
+                this.Close();
             }
         }
 
-        private void Bt_login_Click(object sender, EventArgs e)
+        private void Bt_logout_Click(object sender, EventArgs e)
         {
 
             //로그인 폼 열기
             Login loginForm = new Login();
             loginForm.Show();
+            this.Close(); //현재 창 숨기기
         }
         private void Pb_logo_Click(object sender, EventArgs e)
         { 

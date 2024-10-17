@@ -37,7 +37,7 @@ namespace CNHRD_Team2_FinalProject
             cb_employees.SelectedIndexChanged += ComboBox_SelectedIndexChanged;
 
             //로그인 버튼 클릭 이벤트 핸들러 추가
-            bt_login.Click += Bt_login_Click;
+            bt_logout.Click += bt_logout_Click;
 
             //로고 버튼 클릭 이벤트핸들러 추가
             pb_logo.Click += Pb_logo_Click;
@@ -106,12 +106,13 @@ namespace CNHRD_Team2_FinalProject
             }
         }
 
-        private void Bt_login_Click(object sender, EventArgs e)
+        private void bt_logout_Click(object sender, EventArgs e)
         {
 
             //로그인 폼 열기
             Login loginForm = new Login();
             loginForm.Show();
+            this.Close();
         }
         private void Pb_logo_Click(object sender, EventArgs e)
         {

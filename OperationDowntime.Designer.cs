@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bt_login = new System.Windows.Forms.Button();
             this.cb_employees = new System.Windows.Forms.ComboBox();
             this.cb_operation = new System.Windows.Forms.ComboBox();
             this.cb_productionlist = new System.Windows.Forms.ComboBox();
             this.cb_monitoring = new System.Windows.Forms.ComboBox();
             this.pb_logo = new System.Windows.Forms.PictureBox();
+            this.bt_logout = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.bt_login);
+            this.panel1.Controls.Add(this.bt_logout);
             this.panel1.Controls.Add(this.cb_employees);
             this.panel1.Controls.Add(this.cb_operation);
             this.panel1.Controls.Add(this.cb_productionlist);
@@ -50,17 +50,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(824, 112);
             this.panel1.TabIndex = 4;
-            // 
-            // bt_login
-            // 
-            this.bt_login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_login.Font = new System.Drawing.Font("돋움체", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.bt_login.Location = new System.Drawing.Point(720, 56);
-            this.bt_login.Name = "bt_login";
-            this.bt_login.Size = new System.Drawing.Size(80, 24);
-            this.bt_login.TabIndex = 7;
-            this.bt_login.Text = "로그인";
-            this.bt_login.UseVisualStyleBackColor = true;
             // 
             // cb_employees
             // 
@@ -134,6 +123,17 @@
             this.pb_logo.TabIndex = 3;
             this.pb_logo.TabStop = false;
             // 
+            // bt_logout
+            // 
+            this.bt_logout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_logout.Font = new System.Drawing.Font("돋움체", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.bt_logout.Location = new System.Drawing.Point(712, 56);
+            this.bt_logout.Name = "bt_logout";
+            this.bt_logout.Size = new System.Drawing.Size(96, 24);
+            this.bt_logout.TabIndex = 8;
+            this.bt_logout.Text = "로그아웃";
+            this.bt_logout.UseVisualStyleBackColor = true;
+            // 
             // OperationDowntime
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -155,11 +155,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button bt_login;
         private System.Windows.Forms.ComboBox cb_employees;
         private System.Windows.Forms.ComboBox cb_operation;
         private System.Windows.Forms.ComboBox cb_productionlist;
         private System.Windows.Forms.ComboBox cb_monitoring;
         private System.Windows.Forms.PictureBox pb_logo;
+        private System.Windows.Forms.Button bt_logout;
     }
 }

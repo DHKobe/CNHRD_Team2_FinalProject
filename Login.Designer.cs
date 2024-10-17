@@ -28,23 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tbID = new System.Windows.Forms.TextBox();
+            this.tbPW = new System.Windows.Forms.TextBox();
+            this.btLogin = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CNHRD_Team2_FinalProject.Properties.Resources.HDlogo1;
+            this.pictureBox1.Location = new System.Drawing.Point(48, 48);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(288, 88);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tbID
+            // 
+            this.tbID.Font = new System.Drawing.Font("돋움체", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tbID.Location = new System.Drawing.Point(40, 344);
+            this.tbID.Name = "tbID";
+            this.tbID.Size = new System.Drawing.Size(200, 29);
+            this.tbID.TabIndex = 1;
+            // 
+            // tbPW
+            // 
+            this.tbPW.Font = new System.Drawing.Font("돋움체", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tbPW.Location = new System.Drawing.Point(40, 400);
+            this.tbPW.Name = "tbPW";
+            this.tbPW.Size = new System.Drawing.Size(200, 29);
+            this.tbPW.TabIndex = 2;
+            // 
+            // btLogin
+            // 
+            this.btLogin.BackColor = System.Drawing.Color.LightGray;
+            this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btLogin.Font = new System.Drawing.Font("돋움체", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btLogin.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btLogin.Location = new System.Drawing.Point(272, 344);
+            this.btLogin.Name = "btLogin";
+            this.btLogin.Size = new System.Drawing.Size(80, 88);
+            this.btLogin.TabIndex = 3;
+            this.btLogin.Text = "로그인";
+            this.btLogin.UseVisualStyleBackColor = false;
+            this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(384, 811);
+            this.Controls.Add(this.btLogin);
+            this.Controls.Add(this.tbPW);
+            this.Controls.Add(this.tbID);
+            this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("돋움체", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ForeColor = System.Drawing.Color.Black;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Login";
             this.Text = "로그인";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox tbID;
+        private System.Windows.Forms.TextBox tbPW;
+        private System.Windows.Forms.Button btLogin;
     }
 }
