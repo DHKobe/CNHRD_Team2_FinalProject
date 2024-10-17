@@ -53,5 +53,12 @@ namespace CNHRD_Team2_FinalProject
         {
             SelectMysql();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            testpage testpageForm = new testpage();
+            testpageForm.Show();
+            this.Hide();
+        }
     }
 }

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cb_monitoring = new System.Windows.Forms.ComboBox();
-            this.cb_productionlist = new System.Windows.Forms.ComboBox();
-            this.cb_operation = new System.Windows.Forms.ComboBox();
+            this.bt_logout = new System.Windows.Forms.Button();
             this.cb_employees = new System.Windows.Forms.ComboBox();
-            this.bt_login = new System.Windows.Forms.Button();
+            this.cb_operation = new System.Windows.Forms.ComboBox();
+            this.cb_productionlist = new System.Windows.Forms.ComboBox();
+            this.cb_monitoring = new System.Windows.Forms.ComboBox();
             this.pb_logo = new System.Windows.Forms.PictureBox();
             this.pb_mainimage = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -43,7 +43,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.bt_login);
+            this.panel1.Controls.Add(this.bt_logout);
             this.panel1.Controls.Add(this.cb_employees);
             this.panel1.Controls.Add(this.cb_operation);
             this.panel1.Controls.Add(this.cb_productionlist);
@@ -53,35 +53,31 @@
             this.panel1.Size = new System.Drawing.Size(824, 112);
             this.panel1.TabIndex = 2;
             // 
-            // cb_monitoring
+            // bt_logout
             // 
-            this.cb_monitoring.BackColor = System.Drawing.Color.White;
-            this.cb_monitoring.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb_monitoring.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cb_monitoring.Font = new System.Drawing.Font("돋움체", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.cb_monitoring.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.cb_monitoring.FormattingEnabled = true;
-            this.cb_monitoring.Location = new System.Drawing.Point(48, 48);
-            this.cb_monitoring.Name = "cb_monitoring";
-            this.cb_monitoring.Size = new System.Drawing.Size(136, 29);
-            this.cb_monitoring.TabIndex = 3;
-            this.cb_monitoring.TabStop = false;
-            this.cb_monitoring.Text = "모니터링";
+            this.bt_logout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_logout.Font = new System.Drawing.Font("돋움체", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.bt_logout.Location = new System.Drawing.Point(712, 56);
+            this.bt_logout.Name = "bt_logout";
+            this.bt_logout.Size = new System.Drawing.Size(96, 24);
+            this.bt_logout.TabIndex = 7;
+            this.bt_logout.Text = "로그아웃";
+            this.bt_logout.UseVisualStyleBackColor = true;
             // 
-            // cb_productionlist
+            // cb_employees
             // 
-            this.cb_productionlist.BackColor = System.Drawing.Color.White;
-            this.cb_productionlist.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb_productionlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cb_productionlist.Font = new System.Drawing.Font("돋움체", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.cb_productionlist.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.cb_productionlist.FormattingEnabled = true;
-            this.cb_productionlist.Location = new System.Drawing.Point(208, 48);
-            this.cb_productionlist.Name = "cb_productionlist";
-            this.cb_productionlist.Size = new System.Drawing.Size(136, 29);
-            this.cb_productionlist.TabIndex = 4;
-            this.cb_productionlist.TabStop = false;
-            this.cb_productionlist.Text = "생산목록";
+            this.cb_employees.BackColor = System.Drawing.Color.White;
+            this.cb_employees.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cb_employees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cb_employees.Font = new System.Drawing.Font("돋움체", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cb_employees.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.cb_employees.FormattingEnabled = true;
+            this.cb_employees.Location = new System.Drawing.Point(520, 48);
+            this.cb_employees.Name = "cb_employees";
+            this.cb_employees.Size = new System.Drawing.Size(136, 29);
+            this.cb_employees.TabIndex = 6;
+            this.cb_employees.TabStop = false;
+            this.cb_employees.Text = "직원관리";
             // 
             // cb_operation
             // 
@@ -99,31 +95,35 @@
             this.cb_operation.TabStop = false;
             this.cb_operation.Text = "가동현황";
             // 
-            // cb_employees
+            // cb_productionlist
             // 
-            this.cb_employees.BackColor = System.Drawing.Color.White;
-            this.cb_employees.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb_employees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cb_employees.Font = new System.Drawing.Font("돋움체", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.cb_employees.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.cb_employees.FormattingEnabled = true;
-            this.cb_employees.Location = new System.Drawing.Point(520, 48);
-            this.cb_employees.Name = "cb_employees";
-            this.cb_employees.Size = new System.Drawing.Size(136, 29);
-            this.cb_employees.TabIndex = 6;
-            this.cb_employees.TabStop = false;
-            this.cb_employees.Text = "직원관리";
+            this.cb_productionlist.BackColor = System.Drawing.Color.White;
+            this.cb_productionlist.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cb_productionlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cb_productionlist.Font = new System.Drawing.Font("돋움체", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cb_productionlist.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.cb_productionlist.FormattingEnabled = true;
+            this.cb_productionlist.Location = new System.Drawing.Point(208, 48);
+            this.cb_productionlist.Name = "cb_productionlist";
+            this.cb_productionlist.Size = new System.Drawing.Size(136, 29);
+            this.cb_productionlist.TabIndex = 4;
+            this.cb_productionlist.TabStop = false;
+            this.cb_productionlist.Text = "생산목록";
             // 
-            // bt_login
+            // cb_monitoring
             // 
-            this.bt_login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_login.Font = new System.Drawing.Font("돋움체", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.bt_login.Location = new System.Drawing.Point(720, 56);
-            this.bt_login.Name = "bt_login";
-            this.bt_login.Size = new System.Drawing.Size(80, 24);
-            this.bt_login.TabIndex = 7;
-            this.bt_login.Text = "로그인";
-            this.bt_login.UseVisualStyleBackColor = true;
+            this.cb_monitoring.BackColor = System.Drawing.Color.White;
+            this.cb_monitoring.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cb_monitoring.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cb_monitoring.Font = new System.Drawing.Font("돋움체", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cb_monitoring.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.cb_monitoring.FormattingEnabled = true;
+            this.cb_monitoring.Location = new System.Drawing.Point(48, 48);
+            this.cb_monitoring.Name = "cb_monitoring";
+            this.cb_monitoring.Size = new System.Drawing.Size(136, 29);
+            this.cb_monitoring.TabIndex = 3;
+            this.cb_monitoring.TabStop = false;
+            this.cb_monitoring.Text = "모니터링";
             // 
             // pb_logo
             // 
@@ -156,7 +156,7 @@
             this.Controls.Add(this.pb_mainimage);
             this.Font = new System.Drawing.Font("돋움", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ForeColor = System.Drawing.Color.Black;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainPage";
             this.Text = "홈화면";
             this.panel1.ResumeLayout(false);
@@ -175,6 +175,6 @@
         private System.Windows.Forms.ComboBox cb_employees;
         private System.Windows.Forms.ComboBox cb_operation;
         private System.Windows.Forms.ComboBox cb_productionlist;
-        private System.Windows.Forms.Button bt_login;
+        private System.Windows.Forms.Button bt_logout;
     }
 }
