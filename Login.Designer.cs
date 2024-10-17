@@ -32,6 +32,8 @@
             this.tbID = new System.Windows.Forms.TextBox();
             this.tbPW = new System.Windows.Forms.TextBox();
             this.btLogin = new System.Windows.Forms.Button();
+            this.lb_hint = new System.Windows.Forms.Label();
+            this.lb_email = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,8 +65,7 @@
             // 
             // btLogin
             // 
-            this.btLogin.BackColor = System.Drawing.Color.LightGray;
-            this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btLogin.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btLogin.Font = new System.Drawing.Font("돋움체", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btLogin.ForeColor = System.Drawing.Color.MidnightBlue;
             this.btLogin.Location = new System.Drawing.Point(272, 344);
@@ -75,12 +76,33 @@
             this.btLogin.UseVisualStyleBackColor = false;
             this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
+            // lb_hint
+            // 
+            this.lb_hint.AutoSize = true;
+            this.lb_hint.Font = new System.Drawing.Font("돋움체", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lb_hint.Location = new System.Drawing.Point(88, 496);
+            this.lb_hint.Name = "lb_hint";
+            this.lb_hint.Size = new System.Drawing.Size(0, 16);
+            this.lb_hint.TabIndex = 4;
+            // 
+            // lb_email
+            // 
+            this.lb_email.AutoSize = true;
+            this.lb_email.Font = new System.Drawing.Font("돋움체", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lb_email.Location = new System.Drawing.Point(160, 784);
+            this.lb_email.Name = "lb_email";
+            this.lb_email.Size = new System.Drawing.Size(207, 16);
+            this.lb_email.TabIndex = 5;
+            this.lb_email.Text = "문의: kimdh3273@gmail.com";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(384, 811);
+            this.Controls.Add(this.lb_email);
+            this.Controls.Add(this.lb_hint);
             this.Controls.Add(this.btLogin);
             this.Controls.Add(this.tbPW);
             this.Controls.Add(this.tbID);
@@ -102,5 +124,7 @@
         private System.Windows.Forms.TextBox tbID;
         private System.Windows.Forms.TextBox tbPW;
         private System.Windows.Forms.Button btLogin;
+        private System.Windows.Forms.Label lb_hint;
+        private System.Windows.Forms.Label lb_email;
     }
 }
