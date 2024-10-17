@@ -60,6 +60,7 @@
             this.tbPW.Font = new System.Drawing.Font("돋움체", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.tbPW.Location = new System.Drawing.Point(40, 400);
             this.tbPW.Name = "tbPW";
+            this.tbPW.PasswordChar = '*';
             this.tbPW.Size = new System.Drawing.Size(200, 29);
             this.tbPW.TabIndex = 2;
             // 
